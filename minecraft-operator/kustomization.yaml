@@ -1,0 +1,7 @@
+resources:
+  - crd
+  - default
+  - manager
+  - network-policy
+  - prometheus
+  - rbac
