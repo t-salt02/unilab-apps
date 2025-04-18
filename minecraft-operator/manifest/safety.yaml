@@ -1,0 +1,11 @@
+apiVersion: minecraft.mcop.co-salt.com/v1alpha1
+kind: MinecraftServer
+metadata:
+  name: safety-server
+  namespace: minecraft-operator-system
+spec:
+  version: "1.21.5"
+  difficulty: "normal"
+  serverName: "safetyWorld"
+  storage: "5Gi"
+  hardcore: false
