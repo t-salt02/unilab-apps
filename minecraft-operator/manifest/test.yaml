@@ -1,0 +1,12 @@
+apiVersion: minecraft.mcop.co-salt.com/v1alpha1
+kind: MinecraftServer
+metadata:
+  name: mc-test-server
+  namespace: minecraft-operator-system
+spec:
+  version: "1.21.5"
+  difficulty: "normal"
+  serverName: "testWorld"
+  storage: "5Gi"
+  hardcore: true
+  
