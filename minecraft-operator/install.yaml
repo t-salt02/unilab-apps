@@ -413,7 +413,7 @@ spec:
         - --health-probe-bind-address=:8081
         command:
         - /manager
-        image: controller:latest
+        image: ghcr.io/t-salt02/minecraft-operator:latest
         livenessProbe:
           httpGet:
             path: /healthz
