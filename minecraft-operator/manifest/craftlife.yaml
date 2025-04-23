@@ -7,5 +7,5 @@ spec:
   version: "1.21.5"
   difficulty: "easy"
   serverName: "craftlife"
-  storage: "2Gi"
+  storage: "10Gi"
   hardcore: false
