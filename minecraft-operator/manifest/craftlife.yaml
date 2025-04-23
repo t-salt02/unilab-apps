@@ -9,3 +9,4 @@ spec:
   serverName: "craftlife"
   storage: "10Gi"
   hardcore: false
+  seed: "6668986623205589320"
