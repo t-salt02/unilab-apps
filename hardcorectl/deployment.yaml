@@ -15,7 +15,7 @@ spec:
       serviceAccountName: hardcore-bot-sa        # ②の SA
       containers:
       - name: bot
-        image: ghcr.io/t-salt02/mc-hardcorectl-bot:latest  # CI の最新タグ
+        image: ghcr.io/t-salt02/mc-hardcorectl/mc-hardcorectl-bot:latest  # CI の最新タグ
         env:
         - name: BOT_TOKEN
           valueFrom:
