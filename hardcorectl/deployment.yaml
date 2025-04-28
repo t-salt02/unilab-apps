@@ -1,0 +1,30 @@
+# bot-deploy.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hardcorectl-bot
+  namespace: minecraft-operator-system          # ← Bot 側 NS
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: hardcorectl-bot }
+  template:
+    metadata:
+      labels: { app: hardcorectl-bot }
+    spec:
+      serviceAccountName: hardcore-bot-sa        # ②の SA
+      containers:
+      - name: bot
+        image: ghcr.io/t-salt02/mc-hardcorectl-bot:latest  # CI の最新タグ
+        env:
+        - name: BOT_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: discord-bot
+              key: token
+        - name: APP_ID
+          value: "${APP_ID}"
+        resources:
+          limits:
+            cpu: 100m
+            memory: 128Mi

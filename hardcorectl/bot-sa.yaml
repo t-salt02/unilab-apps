@@ -1,0 +1,6 @@
+# bot-sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: hardcore-bot-sa
+  namespace: minecraft-operator-system
