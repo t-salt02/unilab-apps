@@ -1,11 +1,11 @@
 apiVersion: minecraft.mcop.co-salt.com/v1alpha1
 kind: MinecraftServer
 metadata:
-  name: hard
+  name: okasi
   namespace: minecraft-hard
 spec:
   version: "1.21.5"
-  difficulty: "hard"
-  serverName: "hard"
+  difficulty: "peaceful"
+  serverName: "okasi"
   storage: "2Gi"
-  hardcore: true
+  hardcore: false
