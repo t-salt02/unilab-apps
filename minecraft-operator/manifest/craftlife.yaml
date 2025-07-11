@@ -4,7 +4,7 @@ metadata:
   name: craftlife
   namespace: minecraft
 spec:
-  version: "1.21.5"
+  version: "1.21.6"
   difficulty: "easy"
   serverName: "craftlife"
   storage: "10Gi"
